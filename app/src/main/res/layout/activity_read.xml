@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReadActivity"
+    android:fillViewport="true"
+    android:scrollbars="none"
+    android:background="@color/white"
+    android:layout_marginBottom="20sp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        >
+
+        <!--  Navigation Section  -->
+        <RelativeLayout
+            android:id="@+id/navigation_section"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="@color/white"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="25dp">
+
+            <LinearLayout
+                android:id="@+id/ic_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/circle"
+                android:backgroundTint="@color/white">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10sp"
+                    android:src="@drawable/fi_arrow_left" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ic_loved"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/circle"
+                android:backgroundTint="@color/white">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10sp"
+                    android:src="@drawable/fi_heart" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <!--  Jumbotron Section  -->
+        <LinearLayout
+            android:id="@+id/jumbotron_section"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/navigation_section"
+            android:layout_marginTop="-90sp"
+            android:layout_marginLeft="25sp"
+            android:orientation="vertical"
+            >
+
+            <!--  Title - Genre  -->
+            <LinearLayout
+                android:id="@+id/title_genre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="15sp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:text="The Power of Hooked"
+                    android:textColor="@color/txt_primary"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppinsregular"
+                    android:text="Growth Bussiness"
+                    android:textSize="15sp"
+                    android:textColor="@color/txt_gray" />
+            </LinearLayout>
+
+            <!--  Decoration  -->
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_dots"
+                android:layout_marginVertical="15sp"
+                />
+
+            <!--  Author  -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="By Nir Eyal"
+                android:textSize="15sp"
+                android:textColor="@color/txt_primary" />
+
+        </LinearLayout>
+
+        <!--  Points Section  -->
+        <LinearLayout
+            android:id="@+id/points_section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/jumbotron_section"
+            android:orientation="vertical"
+            android:layout_marginHorizontal="25sp"
+            >
+
+            <!--  Point 1  -->
+
+            <!--  Point 2  -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15sp"
+                android:background="@drawable/radius"
+                android:backgroundTint="@color/card_color"
+                android:orientation="horizontal"
+                android:padding="25sp">
+
+                <!--  Number  -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/circle"
+                    android:backgroundTint="@color/white"
+                    android:padding="3sp">
+
+                    <LinearLayout
+                        android:layout_width="35sp"
+                        android:layout_height="35sp"
+                        android:background="@drawable/circle"
+                        android:backgroundTint="@color/blue_secondary"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="8sp"
+                            android:fontFamily="@font/poppinsmedium"
+                            android:gravity="center"
+                            android:padding="5sp"
+                            android:text="1"
+                            android:textAlignment="center"
+                            android:textColor="@color/txt_primary"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15sp"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:text="The Entrepreneurial\nMyth Now"
+                    android:textColor="@color/txt_primary"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="25sp"
+                android:background="@drawable/radius"
+                android:backgroundTint="@color/card_color"
+                android:layout_marginTop="15sp"
+                >
+
+                <!--  Number  -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/circle"
+                    android:backgroundTint="@color/white"
+                    android:padding="3sp"
+                    >
+                    <LinearLayout
+                        android:layout_width="35sp"
+                        android:layout_height="35sp"
+                        android:background="@drawable/circle"
+                        android:backgroundTint="@color/purple_secondary"
+                        android:orientation="horizontal"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppinsmedium"
+                            android:textSize="20sp"
+                            android:textColor="@color/txt_primary"
+                            android:text="2"
+                            android:padding="5sp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textAlignment="center"
+                            android:layout_marginLeft="6sp"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:textSize="16sp"
+                    android:textColor="@color/txt_primary"
+                    android:text="Do Interview Trip:\nMatter or Not"
+                    android:layout_marginLeft="15sp"
+                    />
+
+            </LinearLayout>
+
+            <!--  Point 3  -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="25sp"
+                android:background="@drawable/radius"
+                android:backgroundTint="@color/card_color"
+                android:layout_marginTop="15sp"
+                >
+
+                <!--  Number  -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/circle"
+                    android:backgroundTint="@color/white"
+                    android:padding="3sp"
+                    >
+                    <LinearLayout
+                        android:layout_width="35sp"
+                        android:layout_height="35sp"
+                        android:background="@drawable/circle"
+                        android:backgroundTint="@color/red_pale_secondary"
+                        android:orientation="horizontal"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppinsmedium"
+                            android:textSize="20sp"
+                            android:textColor="@color/txt_primary"
+                            android:text="3"
+                            android:padding="5sp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textAlignment="center"
+                            android:layout_marginLeft="6sp"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:textSize="16sp"
+                    android:textColor="@color/txt_primary"
+                    android:text="Hack The Tools Also\nPowered Storm"
+                    android:layout_marginLeft="15sp"
+                    />
+
+            </LinearLayout>
+
+            <!--  Point 4  -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="25sp"
+                android:background="@drawable/radius"
+                android:backgroundTint="@color/card_color"
+                android:layout_marginTop="15sp"
+                >
+
+                <!--  Number  -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/circle"
+                    android:backgroundTint="@color/white"
+                    android:padding="3sp"
+                    >
+                    <LinearLayout
+                        android:layout_width="35sp"
+                        android:layout_height="35sp"
+                        android:background="@drawable/circle"
+                        android:backgroundTint="@color/yellow_secondary"
+                        android:orientation="horizontal"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppinsmedium"
+                            android:textSize="20sp"
+                            android:textColor="@color/txt_primary"
+                            android:text="4"
+                            android:padding="5sp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textAlignment="center"
+                            android:layout_marginLeft="6sp"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:textSize="16sp"
+                    android:textColor="@color/txt_primary"
+                    android:text="Raport Says Never Into\nDark, Well Look How"
+                    android:layout_marginLeft="15sp"
+                    />
+
+            </LinearLayout>
+
+            <!--  Point 5  -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="25sp"
+                android:background="@drawable/radius"
+                android:backgroundTint="@color/card_color"
+                android:layout_marginTop="15sp"
+                >
+
+                <!--  Number  -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/circle"
+                    android:backgroundTint="@color/white"
+                    android:padding="3sp"
+                    >
+                    <LinearLayout
+                        android:layout_width="35sp"
+                        android:layout_height="35sp"
+                        android:background="@drawable/circle"
+                        android:backgroundTint="@color/pink_secondary"
+                        android:orientation="horizontal"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppinsmedium"
+                            android:textSize="20sp"
+                            android:textColor="@color/txt_primary"
+                            android:text="5"
+                            android:padding="5sp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textAlignment="center"
+                            android:layout_marginLeft="6sp"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:textSize="16sp"
+                    android:textColor="@color/txt_primary"
+                    android:text="The End of Miserable and\nWelcoming Digital"
+                    android:layout_marginLeft="15sp"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.BookiesApp" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/blue_primary</item>
+        <item name="colorPrimaryVariant">@color/blue_secondary</item>
+        <item name="colorSecondary">@color/purple_primary</item>
+        <item name="colorSecondaryVariant">@color/purple_secondary</item>
+        <item name="colorTertiary">@color/red_pale_primary</item>
+        <item name="colorOnTertiary">@color/red_pale_secondary</item>
+        <item name="colorSurface">@color/yellow_secondary</item>
+        <item name="colorError">@color/pink_secondary</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="colorButtonNormal">@color/btn_color</item>
+        <item name="colorContainer">@color/card_color</item>
+        <item name="colorAccent">@color/txt_primary</item>
+        <item name="colorOutline">@color/txt_secondary</item>
+        <item name="colorPrimaryDark">@color/txt_tertiary</item>
+        <item name="colorControlHighlight">@color/badge_color</item>
+        <item name="colorControlActivated">@color/txt_gray</item>
+    </style>
+</resources>

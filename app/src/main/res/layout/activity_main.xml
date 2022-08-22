@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:fillViewport="true"
+    android:scrollbars="none"
+    >
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/white"
+    android:background="@color/white"
+    android:paddingVertical="35dp"
+    android:paddingHorizontal="30dp"
+    android:isScrollContainer="true"
+    >
+
+    <!--  Header Section  -->
+    <TextView
+        android:id="@+id/txt_header1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppinsmedium"
+        android:textColor="@color/txt_primary"
+        android:textSize="18sp"
+        android:text="Topic"
+        />
+
+    <!--  Topic Section  -->
+    <HorizontalScrollView
+        android:id="@+id/topic_section"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:measureAllChildren="false"
+        android:scrollbars="none"
+        android:layout_marginTop="40dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/txt_header1"
+            android:layout_marginBottom="15dp"
+            >
+
+            <LinearLayout
+                android:id="@+id/topic_1"
+                android:layout_width="155dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:backgroundTint="@color/blue_primary"
+                android:background="@drawable/radius"
+                android:padding="20dp"
+                android:layout_marginRight="10sp"
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="20dp"
+                    android:backgroundTint="@color/badge_color"
+                    android:background="@drawable/circle"
+                    >
+                    <ImageView
+                        android:id="@+id/ic_award"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/fi_award"
+                        android:padding="15sp"
+                        />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/title_topic_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:textColor="@color/txt_primary"
+                    android:textSize="16sp"
+                    android:text="My Self \nImprovement"
+                    />
+                <TextView
+                    android:id="@+id/data_books_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppinsregular"
+                    android:textColor="@color/txt_tertiary"
+                    android:textSize="12sp"
+                    android:text="84 books"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/topic_2"
+                android:layout_width="155dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:backgroundTint="@color/purple_primary"
+                android:background="@drawable/radius"
+                android:padding="20dp"
+                android:layout_marginRight="10sp"
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="20dp"
+                    android:backgroundTint="#D8D8FF"
+                    android:background="@drawable/circle"
+                    >
+                    <ImageView
+                        android:id="@+id/ic_trending_up"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/fi_trending_up"
+                        android:padding="15sp"
+                        />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/title_topic_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:textColor="@color/txt_primary"
+                    android:textSize="16sp"
+                    android:text="Business \nEducations"
+                    />
+                <TextView
+                    android:id="@+id/data_books_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppinsregular"
+                    android:textColor="@color/txt_tertiary"
+                    android:textSize="12sp"
+                    android:text="12 books"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/topic_3"
+                android:layout_width="155dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:backgroundTint="@color/red_pale_primary"
+                android:background="@drawable/radius"
+                android:padding="20dp"
+                android:layout_marginRight="10sp"
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="20dp"
+                    android:backgroundTint="#FFF8F8"
+                    android:background="@drawable/circle"
+                    >
+                    <ImageView
+                        android:id="@+id/ic_star"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/fi_star"
+                        android:padding="15sp"
+                        />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/title_topic_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:textColor="@color/txt_primary"
+                    android:textSize="16sp"
+                    android:text="Non-Fiction\nStories"
+                    />
+                <TextView
+                    android:id="@+id/data_books_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppinsregular"
+                    android:textColor="@color/txt_tertiary"
+                    android:textSize="12sp"
+                    android:text="84 books"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <!--  Header Section  -->
+    <TextView
+        android:id="@+id/txt_header2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topic_section"
+        android:fontFamily="@font/poppinsmedium"
+        android:textColor="@color/txt_primary"
+        android:textSize="18sp"
+        android:text="Most Popular"
+        />
+
+    <!--  Most Popular Section  -->
+    <LinearLayout
+        android:id="@+id/most_popular_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/txt_header2"
+        android:layout_marginTop="10dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/radius"
+            android:backgroundTint="@color/card_color"
+            android:padding="12dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/radius"
+                android:backgroundTint="@color/white">
+
+                <ImageView
+                    android:id="@+id/content_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5sp"
+                    android:src="@drawable/content_1" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/info_content_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="15sp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:text="Lamp of Brightness\nReal World"
+                    android:textColor="@color/txt_primary"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/genre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/title"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:text="Grow Bussiness"
+                    android:textColor="@color/txt_gray"
+                    android:textSize="13sp" />
+
+                <RelativeLayout
+                    android:id="@+id/icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/genre"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/circle"
+                    android:backgroundTint="@color/white">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10sp"
+                        android:src="@drawable/fi_heart" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15sp"
+            android:background="@drawable/radius"
+            android:backgroundTint="@color/card_color"
+            android:padding="12dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/radius"
+                android:backgroundTint="@color/white">
+
+                <ImageView
+                    android:id="@+id/content_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5sp"
+                    android:src="@drawable/content_2" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/info_content_2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="15sp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/title2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:text="Art of Gathering\nDo Meeting"
+                    android:textColor="@color/txt_primary"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/genre2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/title2"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:text="Team Product"
+                    android:textColor="@color/txt_gray"
+                    android:textSize="13sp" />
+
+                <RelativeLayout
+                    android:id="@+id/icon2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/genre2"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/circle"
+                    android:backgroundTint="@color/white">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10sp"
+                        android:src="@drawable/fi_heart" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/radius"
+            android:backgroundTint="@color/card_color"
+            android:padding="12dp"
+            android:layout_marginTop="15sp"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/radius"
+                android:backgroundTint="@color/white">
+                <ImageView
+                    android:id="@+id/content_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/content_3"
+                    android:padding="5sp"
+                    />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/info_content_3"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="15sp"
+                >
+                <TextView
+                    android:id="@+id/title3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tiger in The Garder\nFor Eating"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:textSize="16sp"
+                    android:textColor="@color/txt_primary"
+                    />
+
+                <TextView
+                    android:id="@+id/genre3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/title3"
+                    android:text="Children Story"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:textSize="13sp"
+                    android:textColor="@color/txt_gray"
+                    />
+
+                <RelativeLayout
+                    android:id="@+id/icon3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/genre3"
+                    android:background="@drawable/circle"
+                    android:layout_alignParentRight="true"
+                    android:backgroundTint="@color/white">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/fi_heart"
+                        android:padding="10sp"
+                        />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/content_4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/radius"
+            android:backgroundTint="@color/card_color"
+            android:padding="12dp"
+            android:layout_marginTop="15sp"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/radius"
+                android:backgroundTint="@color/white">
+                <ImageView
+                    android:id="@+id/cover_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/content_4"
+                    android:padding="5sp"
+                    />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/info_content_4"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="15sp"
+                >
+                <TextView
+                    android:id="@+id/title4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="The Power of\nHooked"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:textSize="16sp"
+                    android:textColor="@color/txt_primary"
+                    />
+
+                <TextView
+                    android:id="@+id/genre4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/title4"
+                    android:text="Growth Bussiness"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:textSize="13sp"
+                    android:textColor="@color/txt_gray"
+                    />
+
+                <RelativeLayout
+                    android:id="@+id/icon4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/genre4"
+                    android:background="@drawable/circle"
+                    android:layout_alignParentRight="true"
+                    android:backgroundTint="@color/white">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/fi_heart"
+                        android:padding="10sp"
+                        />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+</ScrollView>
