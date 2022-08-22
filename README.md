@@ -9,7 +9,7 @@
 
 ### Mockup
 <div style="display: flex">
-  <img src="https://i.postimg.cc/qvjRfcSt/Screenshot-20220822-123708.png" width="250" />
-  <img src="https://i.postimg.cc/QC44GyQ4/Screenshot-20220822-155741.png" width="250" />
-  <img src="https://i.postimg.cc/FFThGbd1/Screenshot-20220822-155805.png" width="250" />
+  <img src="https://i.postimg.cc/qvjRfcSt/Screenshot-20220822-123708.png" width="200" />
+  <img src="https://i.postimg.cc/QC44GyQ4/Screenshot-20220822-155741.png" width="200" />
+  <img src="https://i.postimg.cc/FFThGbd1/Screenshot-20220822-155805.png" width="200" />
 </div>
